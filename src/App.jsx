@@ -10,7 +10,7 @@ const oldTasks = localStorage.getItem("tasks");
 console.log(oldTasks);
 
 {
-  alert("Welcome!, This work well on tabs and PCs");
+  alert("Welcome!, This work well on Tabs and PCs");
 }
 
 const App = () => {
