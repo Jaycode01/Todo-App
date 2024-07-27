@@ -9,10 +9,6 @@ import doneIcon from "./assets/check-mark.png";
 const oldTasks = localStorage.getItem("tasks");
 console.log(oldTasks);
 
-{
-  alert("Welcome!, This work well on Tabs and PCs");
-}
-
 const App = () => {
   const [tasks, setTasks] = useState(JSON.parse(oldTasks) || []);
 

@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap");
+@font-face {
+  font-family: "Montserrat";
+  src: url(../src/assets/fonts/Montserrat-Regular.woff2);
+}
 
 * {
   margin: 0;
@@ -7,7 +10,7 @@
 }
 
 body {
-  font-family: monospace;
+  font-family: "Montserrat";
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;

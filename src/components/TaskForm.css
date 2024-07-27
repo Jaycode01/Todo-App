@@ -1,58 +1,71 @@
-.app_header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #dcdcdc;
+.app_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dcdcdc;
+  height: 100px;
 }
 
-.app_header > form{
-    width: 40%;
+.app_header > form {
+  width: 60%;
 }
 
-.task_input{
-    font-size: 20px;
-    font-weight: 500;
-    background: #f9f9f9;
-    color: #000;
-    border: 1px solid #dfe3e6;
-    border-radius: 5px;
-    padding: 8px 12px;
-    margin-bottom: 15px;
+.app_header > form > .task_input {
+  font-size: 16px;
+  font-weight: 400;
+  background: #f9f9f9;
+  color: #000;
+  border: 1px solid #dfe3e6;
+  border-radius: 5px;
+  padding: 8px;
+  width: 40%;
+  margin-bottom: 15px;
+  font-family: inherit;
+}
+
+.app_header > form > .task_input::placeholder {
+  color: #303030;
+  font-family: inherit;
+}
+
+.app_header > form > .task_status {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  border: 1px solid #999;
+  border-radius: 5px;
+  width: 80px;
+  height: 37px;
+  padding: 0 5px;
+  margin: 0px 20px;
+}
+
+.app_header > form > .task_submit {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  background: #6457f9;
+  color: #fff;
+  border-radius: 5px;
+  height: 37px;
+  padding: 3px 10px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 627px) {
+  .app_header > form {
     width: 100%;
-}
-
-.task_input::placeholder{
-    color: #686868;
-}
-
-.task_form_bottom_line{
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin: 70px;
+  }
 }
 
-
-.task_status{
-    font-size: 16px;
-    font-weight: 500;
-    border: 1px solid #999;
-    border-radius: 5px;
-    width: 120px;
-    height: 40px;
-    padding: 0 5px;
+@media screen and (max-width: 520px) {
+  .app_header > form {
+    width: 100%;
+    margin: 1.7rem;
+  }
 }
-
-.task_submit{
-    font-size: 16px;
-    font-weight: 500;
-    background: #6457f9;
-    color: #fff;
-    border-radius: 5px;
-    height: 40px;
-    padding: 3px 13px;
-    margin-left: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-

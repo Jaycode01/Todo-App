@@ -59,6 +59,32 @@ const Taskform = ({ setTasks }) => {
   };
 
   return (
+    // <header className="app_header">
+    //   <form action="" onSubmit={handleSubmit}>
+    //     <input
+    //       type="text"
+    //       name="task"
+    //       value={taskData.task}
+    //       className="task_input"
+    //       placeholder="Enter your task"
+    //       onChange={handleChange}
+    //     />
+    //     <select
+    //       name="status"
+    //       value={taskData.status}
+    //       className="task_status"
+    //       onChange={handleChange}
+    //     >
+    //       <option value="todo">Todo</option>
+    //       <option value="doing">Doing</option>
+    //       <option value="done">Done</option>
+    //     </select>
+    //     <button type="submit" className="task_submit">
+    //       +Add Task
+    //     </button>
+    //   </form>
+    // </header>
+
     <header className="app_header">
       <form action="" onSubmit={handleSubmit}>
         <input
@@ -70,46 +96,21 @@ const Taskform = ({ setTasks }) => {
           onChange={handleChange}
         />
 
-        <div className="task_form_bottom_line">
-          <div>
-            <Tag
-              tagName="HTML"
-              selectTag={selectTag}
-              selected={checkTag("HTML")}
-            />
-            <Tag
-              tagName="CSS"
-              selectTag={selectTag}
-              selected={checkTag("CSS")}
-            />
-            <Tag
-              tagName="JavaScript"
-              selectTag={selectTag}
-              selected={checkTag("JavaScript")}
-            />
-            <Tag
-              tagName="React"
-              selectTag={selectTag}
-              selected={checkTag("React")}
-            />
-          </div>
+        <select
+          name="status"
+          id=""
+          value={taskData.status}
+          className="task_status"
+          onChange={handleChange}
+        >
+          <option value="todo">Todo</option>
+          <option value="doing">Doing</option>
+          <option value="done">Done</option>
+        </select>
 
-          <div>
-            <select
-              name="status"
-              value={taskData.status}
-              className="task_status"
-              onChange={handleChange}
-            >
-              <option value="todo">Todo</option>
-              <option value="doing">Doing</option>
-              <option value="done">Done</option>
-            </select>
-            <button type="submit" className="task_submit">
-              +Add Task
-            </button>
-          </div>
-        </div>
+        <button type="submit" className="task_submit">
+          + Add Task
+        </button>
       </form>
     </header>
   );
